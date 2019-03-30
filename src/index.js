@@ -7,12 +7,14 @@ window.addEventListener('DOMContentLoaded', () => {
     let modal = require('./parts/modal'),
         tabs = require('./parts/tabs'),
         timer = require ('./parts/timer'),
-        popupWindow = require ('./parts/popupWindow');
+        popupWindow = require ('./parts/popupWindow'),
+        img = require ('./parts/img');
 
     modal();
     tabs();
     timer();
     popupWindow();
+    img();
 });
 
 

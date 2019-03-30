@@ -25,6 +25,12 @@ function modal() {
         modalWindow(this);
     });
 
+    window.addEventListener ('click', function(event) {
+        if (event.target == popup) {
+            popup.style.display = 'none';
+        }
+    });
+
     let btnHeader = document.querySelector('.header_btn'),
         popupEngineer = document.querySelector('.popup_engineer');
 
@@ -34,7 +40,11 @@ function modal() {
     closeTwo.onclick = function () {
         popupEngineer.style.display = '';
     }
-
+    window.onclick = function(event) {
+            if (event.target == popupEngineer) {
+                popupEngineer.style.display = 'none';
+            }
+        }
 }   
 
 module.exports = modal;

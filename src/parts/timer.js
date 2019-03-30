@@ -2,7 +2,7 @@ function timer() {
 
     // Timer
 
-    let deadline = '2019-04-02 21:00:00';
+    let deadline = '2019-12-18 00:00:00';
 
     function getTimeRemaining(endtime) {
         let t = Date.parse(endtime) - Date.parse(new Date()),

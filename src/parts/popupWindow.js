@@ -7,6 +7,11 @@ function popupWindow() {
         let modal = document.querySelector('.popup');
         modal.style.display = 'flex';
     }
+    window.addEventListener('click', function (event) {
+        if (event.target == popup) {
+            popup.style.display = 'none';
+        }
+    });
 }
 
 module.exports = popupWindow;
